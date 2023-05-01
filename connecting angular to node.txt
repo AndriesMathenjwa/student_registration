@@ -1,0 +1,32 @@
+getting all data
+services.ts
+-------------
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+in the export class ApiService add getAllData function and url
+
+app.component.ts
+import { ApiService } from './api.service';
+add oninit function
+create function to get all user an put them in the array defined in the service.ts
+
+app.module.ts
+ imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+
+app.componet.ts
+<td>{{user.id}}</td>
+    <td>{{user.stname}}</td>
+    <td>{{user.course}}</td>
+    <td>{{user.fee}}</td>
+
+
+
+
+routhing 
+routing.ts add path of the components and import them
